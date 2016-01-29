@@ -43,7 +43,7 @@ Pizza.prototype.calculate = function() {
   } else if (this.meatTwo === "TSTCBacon"){
     this.pizzaCost += 3.50;
   }
-  return this.pizzaCost;
+  return this.pizzaCost / 2;
 };
 
 
