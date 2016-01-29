@@ -2,20 +2,52 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css.styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Parlor</title>
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
       <h1>Create your own pizza!<h1>
         <h3>Choose 4 toppings for your incredibly delicious pizza!</h3>
+      </div>
 
-        <br>
-        <br>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Prices</h3></div>
+        <div class="panel-body">
+          <div class="col-md-4">
+            <ul>
+              <p><h4>Sizes</h4></p>
+              <li>Small: $6</li>
+              <li>Medium: $8</li>
+              <li>Large: $10</li>
+            </ul>
+          </div>
 
-        <form id="order">
+          <div class="col-md-4">
+            <ul>
+              <p><h4>Vegetable Toppings</h4></p>
+              <li>Mushroom: $1</li>
+              <li>Pineapple: $2</li>
+              <li>Onion: $0.50</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <ul>
+              <p><h4>Meat Toppings</h4></p>
+              <li>Bacon: $1.50</li>
+              <li>Super Thick Cut Bacon: $2.50</li>
+              <li>Thicker than Super Thick Cut Bacon: $3.50</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        <form id="pizza">
+          <div class="col-md-8">
           <label for="size">What size pie would you like?</label>
           <select id="size">
             <option value="small">Small</option>
@@ -26,8 +58,8 @@
           <br>
           <br>
 
-          <label for="veg1">Choose your first veggie topping!</label>
-          <select id="veg1">
+          <label for="veggie1">Choose your first veggie topping!</label>
+          <select id="veggie1">
             <option value="Mushrooms">Mushrooms</option>
             <option value="Pineapple">Pineapple</option>
             <option value="Onion">Onion</option>
@@ -36,8 +68,8 @@
           <br>
           <br>
 
-          <label for="veg2">Choose your second veggie topping!</label>
-          <select id="veg2">
+          <label for="veggie2">Choose your second veggie topping!</label>
+          <select id="veggie2">
             <option value="Mushrooms">Mushrooms</option>
             <option value="Pineapple">Pineapple</option>
             <option value="Onion">Onion</option>
@@ -56,19 +88,24 @@
           <br>
           <br>
 
-          <label for="meat1">Choose your first meat topping!</label>
-          <select id="meat1">
+          <label for="meat2">Choose your first meat topping!</label>
+          <select id="meat2">
             <option value="Bacon">Bacon</option>
             <option value="STCBacon">Super Thick Cut Bacon</option>
             <option value="TSTCBacon">Thicker than Super Thick Cut Bacon</option>
           </select>
+          </div>
 
           <br>
           <br>
 
-          <button class="btn btn-danger" type="submit">Click for final price!</button>
+          <div class="col-md-4">
+            <button class="btn btn-danger" type="submit">Click for final price!</button>
+          </div>
         </form>
-        <div class="display"></div>
+      <div class="display">
+        <ul id="show"></ul>
+      </div>
     </div>
   </body>
 </html>
