@@ -59,8 +59,8 @@ $(document).ready(function() {
     var finalPizza = new Pizza(sz, veg1, veg2, m1, m2);
     finalPizza.calculate();
 
-    $(".display").text(finalPizza.pizzaCost);
+    $("#display-price").text(finalPizza.calculate());
     event.preventDefault();
-
+    
   });
 });
