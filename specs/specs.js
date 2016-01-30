@@ -10,6 +10,6 @@ it ("will display pizza properties", function (){
 
 it("will calculate the price of pizza", function (){
   var testPizza = new Pizza("Small", "Mushroom", "Onion", "Bacon", "Ham");
-  expect(testPizza.calculate()).to.equal(2);
+  expect(testPizza.calculate()).to.equal(1);
   });
 });

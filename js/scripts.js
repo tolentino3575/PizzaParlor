@@ -21,6 +21,8 @@ Pizza.prototype.calculate = function() {
     this.pizzaCost += 2;
   } else if (this.vegOne === "Onion"){
     this.pizzaCost += .50;
+  } else if (this.vegOne === "None") {
+    this.pizzaCost += 0;
   }
   if (this.vegTwo === "Mushrooms"){
     this.pizzaCost += 1;
@@ -28,6 +30,8 @@ Pizza.prototype.calculate = function() {
     this.pizzaCost += 2;
   } else if (this.vegTwo === "Onion"){
     this.pizzaCost += .50;
+  } else if (this.vegTwo === "None"){
+    this.pizzaCost += 0;
   }
   if (this.meatOne === "Bacon"){
     this.pizzaCost += 1.50;
@@ -35,6 +39,8 @@ Pizza.prototype.calculate = function() {
     this.pizzaCost += 2.50;
   } else if (this.meatOne === "TSTCBacon"){
     this.pizzaCost += 3.50;
+  } else if (this.meatOne === "None"){
+    this.pizzaCost += 0;
   }
   if (this.meatTwo === "Bacon"){
     this.pizzaCost += 1.50;
@@ -42,6 +48,8 @@ Pizza.prototype.calculate = function() {
     this.pizzaCost += 2.50;
   } else if (this.meatTwo === "TSTCBacon"){
     this.pizzaCost += 3.50;
+  } else if (this.meatTwo === "None"){
+    this.pizzaCost += 0;
   }
   return this.pizzaCost / 2;
 };
