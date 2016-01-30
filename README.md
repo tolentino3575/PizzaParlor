@@ -16,7 +16,7 @@ Open html, css, or js files in a text editor
 
 ##Link to Github Pages
 
-
+https://github.com/tolentino3575/PizzaParlor/tree/gh-pages
 
 ##Legal
 
