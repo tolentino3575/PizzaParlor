@@ -58,11 +58,11 @@ Pizza.prototype.calculate = function() {
 $(document).ready(function() {
   $("form#pizza").submit(function(event){
 
-    var sz = $("select#size").val();
-    var veg1 = $("select#veggie1").val();
-    var veg2 = $("select#veggie2").val();
-    var m1 = $("select#meat1").val();
-    var m2 = $("select#meat2").val();
+    var sz = $("#size").val();
+    var veg1 = $("#veggie1").val();
+    var veg2 = $("#veggie2").val();
+    var m1 = $("#meat1").val();
+    var m2 = $("#meat2").val();
 
     var finalPizza = new Pizza(sz, veg1, veg2, m1, m2);
     finalPizza.calculate();
